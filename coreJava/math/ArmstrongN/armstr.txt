@@ -1,0 +1,2 @@
+Armstrong number 153  
+When sum of each numers cube is equal to it.

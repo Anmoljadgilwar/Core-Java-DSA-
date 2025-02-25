@@ -1,0 +1,3 @@
+
+
+print("One Dimensional Array") 
