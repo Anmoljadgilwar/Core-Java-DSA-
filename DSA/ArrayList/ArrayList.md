@@ -1,5 +1,3 @@
-Sure! Let's break it down simply.
-
 ### **What is an `ArrayList` in Java?**
 
 An **`ArrayList`** is like a **resizable array** in Java. Unlike a regular array, you **don’t need to specify the size** beforehand. It **grows automatically** when new elements are added.

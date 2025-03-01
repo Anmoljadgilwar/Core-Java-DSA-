@@ -15,5 +15,3 @@ Here are some useful methods from `Collections`:
 - `Collections.min(collection)`: Returns the minimum element.
 - `Collections.binarySearch(list, key)`: Searches for a key in a sorted list.
 - `Collections.unmodifiableList(list)`: Returns an unmodifiable (read-only) version of the list.
-
-Would you like an example using any of these methods?
