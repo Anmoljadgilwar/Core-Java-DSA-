@@ -21,7 +21,11 @@ public class multidimensionalArrList {
         list.get(2).add(6);
 
         // Printing the 2D ArrayList
-        System.out.println(list + "\n");
+        System.out.println(list);
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
 
     }
 

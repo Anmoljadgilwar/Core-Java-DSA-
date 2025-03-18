@@ -22,7 +22,7 @@ public class ArrayL1 {
         //replace
         list.set(2, 4);
         System.out.println(list);
-        //delete elements
+        //Remove elements
         list.remove(0); // 0 is the index
         System.out.println(list);
         //size of list

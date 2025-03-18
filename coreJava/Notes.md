@@ -4,6 +4,5 @@ bash
 # javac Hari.java
 
 Then run it with:
-bash
 
 # java Hari

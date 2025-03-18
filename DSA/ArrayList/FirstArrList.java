@@ -27,7 +27,7 @@ public class FirstArrList {
         list.add(18);
         list.add(19);
         list.add(20);
-        System.out.println(list);
+        System.out.print(list);
     }
 
 }

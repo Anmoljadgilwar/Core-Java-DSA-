@@ -1,2 +1,3 @@
 Armstrong number 153  
 When sum of each numers cube is equal to it.
+(1*1*1)+(5*5*5)+(3*3*3)
