@@ -17,7 +17,10 @@ class Q1672MaxWealth {
             for (int j = 0; j < accounts[i].length; j++) {//Adds up all the money the i-th customer has in different banks.
                 sum += accounts[i][j]; //total wealth of the i-th customer.
             }
-            max = Math.max(max, sum);
+            // max = Math.max(max, sum);
+            if (sum > max) {
+                max = sum;
+            }
         }
         return max;
     }

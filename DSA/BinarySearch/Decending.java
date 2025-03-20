@@ -1,0 +1,35 @@
+
+public class Decending {
+
+    public static void main(String[] args) {
+
+        int arr[] = {108, 40, 10, 2, 0, -1, -2, -4};
+        int target = -4;
+        int ans = binarySearch(arr, target);
+        System.out.println(ans);
+
+    }
+    //return the index of the element in the array
+    //return -1 if the element is not present in the array
+
+    static int binarySearch(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            //find the middle element
+            // int mid = (start + end) / 2; //might be possible that (start + end) exceeds the range of int in java
+            int mid = start + (end - start) / 2;
+
+            if (target < arr[mid]) {
+                start = mid + 1;
+            } else if (target > arr[mid]) {
+                end = mid - 1;
+            } else {
+                //ans found
+                return mid;
+            }
+        }
+        return -1;
+    }
+}

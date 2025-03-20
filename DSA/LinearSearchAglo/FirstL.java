@@ -8,7 +8,7 @@ public class FirstL {
         int target = 4;
         int ans = linearSearch(num, target);
 
-        System.out.println(ans);
+        System.out.println("Target value is at index: " + ans);
 
     }
 

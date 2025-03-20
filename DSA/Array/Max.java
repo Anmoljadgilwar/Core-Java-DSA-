@@ -24,8 +24,9 @@ public class Max {
     static void maxval(int[] arr) {
 
         int maxx = arr[0];
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             maxx = Math.max(maxx, arr[i]);
+
         }
 
         System.out.println("Maximum value: " + maxx);

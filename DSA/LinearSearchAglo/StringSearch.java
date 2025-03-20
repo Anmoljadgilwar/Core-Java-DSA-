@@ -3,7 +3,7 @@ public class StringSearch {
 
     public static void main(String[] args) {
         String name = "Gour Hari";
-        char target = '';  //ONLY Single Quotes used in char
+        char target = 'a';  //ONLY Single Quotes used in char
         System.out.println(search(name, target));
     }
 
