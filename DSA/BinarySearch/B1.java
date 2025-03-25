@@ -3,8 +3,9 @@ public class B1 {
 
     public static void main(String[] args) {
 
-        int arr[] = {-8, -6, -4, -1, 0, 1, 2,3,4,5,108,116,118,208};
-        int target = 208;
+        int arr[] = {-10, -6, -4, -1, 0, 1, 2, 108};
+        int target = 108;
+
         int ans = binarySearch(arr, target);
         System.out.println(ans);
 
