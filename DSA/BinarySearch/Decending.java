@@ -26,7 +26,7 @@ public class Decending {
             } else if (target > arr[mid]) {
                 end = mid - 1;
             } else {
-                //ans found
+                // equal to target, ans found
                 return mid;
             }
         }

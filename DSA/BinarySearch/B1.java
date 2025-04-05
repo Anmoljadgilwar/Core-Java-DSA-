@@ -19,7 +19,7 @@ public class B1 {
 
         while (start <= end) {
             //find the middle element
-            // int mid = (start + end) / 2; //might be possible that (start + end) exceeds the range of int in java
+            // int mid = (start + end) / 2; //might be possible that (start + end) value exceeds the range of int in java
             int mid = start + (end - start) / 2;
 
             if (target < arr[mid]) {
@@ -27,7 +27,7 @@ public class B1 {
             } else if (target > arr[mid]) {
                 start = mid + 1;
             } else {
-                //ans found
+                //equal to target, ans found
                 return mid;
             }
         }

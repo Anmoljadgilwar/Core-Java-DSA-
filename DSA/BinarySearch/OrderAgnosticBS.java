@@ -7,7 +7,7 @@ public class OrderAgnosticBS {
 
         int[] arr = {108, 40, 10, 2, 0, -1, -2, -4};
         // int[] arr = {-8, -6, -4, -1, 0, 1, 2, 3, 4, 108, 116, 118, 208};
-        int target = 40;
+        int target = -4;
         System.out.println(orderAgnosticBS(arr, target));
 
     }

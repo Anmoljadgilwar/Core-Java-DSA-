@@ -29,6 +29,7 @@ public class Ceiling {
             if (arr[mid] == target) {
                 return mid;
             }
+
             //decide which side to search
             if (arr[mid] < target) {
                 start = mid + 1;
@@ -36,6 +37,7 @@ public class Ceiling {
                 end = mid - 1;
             }
         }
+        //here, the answer which is greater than target 
         return start;
 
     }
