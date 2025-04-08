@@ -25,6 +25,7 @@ public class TwoDArray2 {
 
         }
         System.out.println();
+        //output
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < colums; j++) {
                 System.out.print(matrix[i][j] + " ");
