@@ -24,11 +24,11 @@ public class InfiniteArray {
 
         //condition for the target to be in range
         while (target > arr[end]) {
-            int temp = end + 1; //this is newStart
+            int newStart = end + 1; //this is newStart
             //double the box value
             //end = previous end + sizeofbox * 2
             end = end + (end - start + 1) * 2;
-            start = temp;
+            start = newStart;
         }
         return binarySearch(arr, target, start, end);
 
