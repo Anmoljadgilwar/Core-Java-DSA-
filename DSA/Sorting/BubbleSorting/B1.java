@@ -16,7 +16,7 @@ public class B1 {
 
     public static void main(String[] args) {
 
-        int arr[] = {4, 2, 6, 8, 10};
+        int[] arr = {4, 6, 2, 8, 10};
         bubble(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -45,29 +45,36 @@ public class B1 {
 
 }
 
+// Time Complexity: O(n^2) in the worst case, O(n) in the best case (when the array is already sorted)
+// Space Complexity: O(1) as we are using only a constant amount of space for the swap variable
+// Stable Sort: Yes, as we are not changing the relative order of equal elements
+// In-place Sort: Yes, as we are sorting the array in place without using any extra space
+
 
 /*
-   public static void main(String[] args) {
-      int arr[] = {5, 4, 3, 2, 1};
-      bubbleSort(arr);
-      printArray(arr);
-   }
+ Initial Array: {4, 2, 6, 8, 10}
 
-   public static void bubbleSort(int[] arr) {
-      for (int i = 0; i < arr.length - 1; i++) {
-         for (int j = 0; j < arr.length - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-               // swap arr[j] and arr[j+1]
-               int temp = arr[j];
-               arr[j] = arr[j + 1];
-               arr[j + 1] = temp;
-            }
-         }
-      }
-   }
+Pass 1:
+Compare 4 > 2 → swap → {2, 4, 6, 8, 10}
 
-   public static void printArray(int[] arr) {
-      for (int i = 0; i < arr.length; i++) {
-         System.out.print(arr[i] + " ");
-      }
-   }*/
+Compare 4 > 6 → no swap
+
+Compare 6 > 8 → no swap
+
+Compare 8 > 10 → no swap
+
+Array after pass 1: {2, 4, 6, 8, 10}
+
+Pass 2:
+Compare 2 > 4 → no swap
+
+Compare 4 > 6 → no swap
+
+Compare 6 > 8 → no swap
+
+swapped remains false, so loop breaks early (array is already sorted)
+
+✅ Final Output:
+
+[2, 4, 6, 8, 10]
+*/
