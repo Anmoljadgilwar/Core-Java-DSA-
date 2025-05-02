@@ -12,7 +12,7 @@ public class Practice {
     }
 
     static void change(int[] num) {
-        num[0] = 108;
+        num[0] = 1008;
     }
 }
 
