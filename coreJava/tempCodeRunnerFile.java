@@ -1,2 +1,1 @@
- {
-        System.out.println();
+objScanner.close();
