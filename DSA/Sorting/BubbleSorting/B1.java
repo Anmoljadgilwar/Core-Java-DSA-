@@ -49,8 +49,6 @@ public class B1 {
 // Space Complexity: O(1) as we are using only a constant amount of space for the swap variable
 // Stable Sort: Yes, as we are not changing the relative order of equal elements
 // In-place Sort: Yes, as we are sorting the array in place without using any extra space
-
-
 /*
  Initial Array: {4, 2, 6, 8, 10}
 
@@ -77,4 +75,4 @@ swapped remains false, so loop breaks early (array is already sorted)
 ✅ Final Output:
 
 [2, 4, 6, 8, 10]
-*/
+ */

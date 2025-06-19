@@ -1,35 +1,37 @@
 
-class TwodArray {
-
-    // you cannot assign null to any primitive data type
-    //int num = null; 
-    // String num = null;
-    public static void main(String[] args) {
-        int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-        //i=0 cause index starts from 0
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-}
-//
-//
+import java.util.Arrays;
 // class TwodArray {
+
+//     // you cannot assign null to any primitive data type
+//     //int num = null; 
+//     // String num = null;
 //     public static void main(String[] args) {
-//         int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9, 1, 2}};
+//         int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 //         //i=0 cause index starts from 0
-//         // for (int[] a : arr) {
-//         //     System.out.println(Arrays.toString(a));
-//         // }
 //         for (int i = 0; i < 3; i++) {
-//             System.out.println(Arrays.toString(arr[i]));
+//             for (int j = 0; j < 3; j++) {
+//                 System.out.print(arr[i][j] + " ");
+//             }
+//             System.out.println();
 //         }
-// //arr.length = number of rows
 //     }
 // }
+//
+//
+class TwodArray {
+
+    public static void main(String[] args) {
+        int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9, 1, 2}, {10, 20, 40}};
+        //i=0 cause index starts from 0
+        // for (int[] a : arr) {
+        //     System.out.println(Arrays.toString(a));
+        // }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(Arrays.toString(arr[i]));
+        }
+//arr.length = number of rows
+    }
+}
 //
 //
 //
