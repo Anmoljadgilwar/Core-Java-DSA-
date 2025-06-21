@@ -1,3 +1,4 @@
+//Binary Search only applied in Sorted Array
 
 public class B1 {
 

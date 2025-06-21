@@ -11,6 +11,8 @@ output:
 Anmol Yadav
 Your name is Anmol Yadav
 
+## index starts from 0
+
 # Find length
 
 System.out.println(fullName.length());

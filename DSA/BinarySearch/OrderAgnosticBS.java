@@ -1,5 +1,5 @@
 //time complexity is same
-// O(logn)
+// O(log n)
 
 public class OrderAgnosticBS {
 
@@ -17,6 +17,7 @@ public class OrderAgnosticBS {
         int end = arr.length - 1;
         //find whether the array is sorted in ascending or descending
         boolean isAsc = arr[start] < arr[end];
+
         while (start <= end) {
             //find the middle element
             int mid = start + (end - start) / 2;
@@ -24,6 +25,7 @@ public class OrderAgnosticBS {
             if (arr[mid] == target) {
                 return mid;
             }
+
             //decide which side to search
             if (isAsc) {
                 if (arr[mid] < target) {

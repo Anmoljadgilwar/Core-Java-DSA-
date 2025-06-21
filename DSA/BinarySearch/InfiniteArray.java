@@ -33,6 +33,7 @@ public class InfiniteArray {
         return binarySearch(arr, target, start, end);
 
     }
+    //
 //2. apply binary search
 
     static int binarySearch(long[] arr, int target, int start, int end) {

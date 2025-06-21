@@ -1,1 +1,1 @@
-String name = obj.nextLine();
+charAt(i)
