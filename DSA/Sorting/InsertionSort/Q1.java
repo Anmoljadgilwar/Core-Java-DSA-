@@ -1,9 +1,15 @@
+/*
+ Q:
+Write a Java program that takes an array of integers as input and sorts it using insertion sort.
+Let the user input the array size and its elements.
+ */
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q1 {
 
+    //Sorting Algorithm
     static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int current = arr[i];
