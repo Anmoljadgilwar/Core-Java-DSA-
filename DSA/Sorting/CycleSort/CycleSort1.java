@@ -25,3 +25,6 @@ public class CycleSort1 {
         System.out.println(Arrays.toString(arr));
     }
 }
+
+//time complexity O(n)
+//space complexity O(1)
