@@ -34,7 +34,7 @@ class Q287FindDublicates {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 4, 3, 2, 2};
+        int[] arr = {1, 4, 3, 2, 4};
         System.out.println(findDuplicate(arr));
     }
 }
