@@ -17,10 +17,6 @@ class Test {
     }
 }
 
-
-
-
-
 //
 //public class Hari {
 //
@@ -42,6 +38,4 @@ class Test {
 //        obj.display(10,40);
 //    }
 //}
-
-
 

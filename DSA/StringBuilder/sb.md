@@ -1,3 +1,7 @@
+## String a2 = "Hello";
+
+(datatype) (var./) (object)
+
 ### ✅ Statement 1:
 
 ```java
