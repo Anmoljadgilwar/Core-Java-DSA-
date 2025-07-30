@@ -4,7 +4,7 @@ class Pen {
     String color;
 
     public void printColor() {
-        System.out.println("The color of this Pen is " + this.color);
+        System.out.println("Color of Pen is " + this.color);
     }
 }
 
