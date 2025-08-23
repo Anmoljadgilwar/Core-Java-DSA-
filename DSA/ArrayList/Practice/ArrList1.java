@@ -14,8 +14,7 @@ public class ArrList1 {
         num.add(60);
         num.add(70);
         num.add(80);
-        num.add(90);
-        num.add(100);
+
         System.out.println(num);
 
         for (int i = 0; i < num.size(); i++) {
