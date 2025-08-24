@@ -21,7 +21,7 @@ public class B1 {
         while (start <= end) {
             //find the middle element
             // int mid = (start + end) / 2; //might be possible that (start + end) value exceeds the range of int in java
-            int mid = start + (end - start) / 2;
+            int mid = start + (end - start) / 2;  //BODMASS
 
             if (target < arr[mid]) {
                 end = mid - 1;
