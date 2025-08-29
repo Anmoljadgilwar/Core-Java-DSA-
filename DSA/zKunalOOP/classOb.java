@@ -1,5 +1,5 @@
 //create a class
-//for every single student
+//for every single student just create an object
 
 class Student {
 
