@@ -5,13 +5,13 @@ class Q744FindCeilingLetter {
 
     public static void main(String[] args) {
 
-        char[] letters = {'c', 'f', 'j'};
-        char target = 'a';
-        System.out.println(new Q744FindCeilingLetter().nextGreatestLetter(letters, target));
+        char[] letters = {'b', 'd', 'g'};
+        char target = 'd';
+        System.out.println(nextGreatestLetter(letters, target));
 
     }
 
-    public char nextGreatestLetter(char[] letters, char target) {
+    public static char nextGreatestLetter(char[] letters, char target) {
 
         int start = 0, end = letters.length - 1;
 
@@ -25,20 +25,7 @@ class Q744FindCeilingLetter {
         }
 
         return letters[start % letters.length];
+
+        //  return letters[start]; // can give indexoutofboud error
     }
 }
-
-// class Solution {
-//    public char nextGreatestLetter(char[] letters, char target) {
-//       int start = 0, end = letters.length - 1, mid = 0;
-//       while (start <= end) {
-//          mid = start + (end - start) / 2;
-//          if (letters[mid] > target) {
-//             end = mid - 1;
-//          } else {
-//             start = mid + 1;
-//          }
-//       }
-//       return letters[start % letters.length];
-//    }
-// }
