@@ -29,3 +29,5 @@ class Q744FindCeilingLetter {
         //  return letters[start]; // can give indexoutofboud error
     }
 }
+
+//output: g
