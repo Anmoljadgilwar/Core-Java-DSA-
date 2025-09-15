@@ -1,58 +1,41 @@
-✅ Correct!
-Let’s break it down:
-
-For `sum(3)`:
-
-```
-sum(3)
-= 3 + sum(2)
-= 3 + 2 + sum(1)
-= 3 + 2 + 1 + sum(0)
-= 3 + 2 + 1 + 0 = 6
-```
-
-Well done! 🎯
+Ah, I see 😃 You’re asking **why the output of `fib(6)` is 8**, not about the call count formula.
+Let’s go back to the basics and carefully evaluate it.
 
 ---
 
-## 🧠 Practice Problem 2: Fibonacci Number
+### Fibonacci definition
 
-### 🔹Problem:
+Your function defines Fibonacci as:
 
-Given `n`, return the `n-th` Fibonacci number.
-(Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, ...)
+- `fib(0) = 0`
+- `fib(1) = 1`
+- For `n > 1`: `fib(n) = fib(n-1) + fib(n-2)`
 
-**Formula**:
+So the sequence builds up like this:
 
 ```
-f(0) = 0
-f(1) = 1
-f(n) = f(n-1) + f(n-2)
+fib(0) = 0
+fib(1) = 1
+fib(2) = fib(1) + fib(0) = 1 + 0 = 1
+fib(3) = fib(2) + fib(1) = 1 + 1 = 2
+fib(4) = fib(3) + fib(2) = 2 + 1 = 3
+fib(5) = fib(4) + fib(3) = 3 + 2 = 5
+fib(6) = fib(5) + fib(4) = 5 + 3 = 8  ✅
 ```
 
 ---
 
-### ✅ Java Code:
+### So the sequence is:
 
-```java
-public class Fibonacci {
-    static int fib(int n) {
-        if (n == 0) return 0;       // Base case
-        if (n == 1) return 1;
-        return fib(n - 1) + fib(n - 2); // Recursive case
-    }
-
-    public static void main(String[] args) {
-        System.out.println(fib(5)); // Output: 5
-    }
-}
+```
+n:    0  1  2  3  4  5  6
+fib:  0  1  1  2  3  5  8
 ```
 
 ---
 
-### 🔍 Test Yourself:
+✅ That’s why `fib(6)` prints **8**.
 
-- What is `fib(4)`?
-- How many recursive calls are made in total for `fib(4)`?
+---
 
-Reply with your answer, or type `hint` if you want a little help.
+Would you like me to also draw a **step-by-step recursion tree** that shows exactly how the program reaches `8` during execution?

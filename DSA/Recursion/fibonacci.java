@@ -13,7 +13,7 @@ public class fibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(fib(6)); // Output: 5
+        System.out.println(fib(6)); // Output: 8
     }
 }
 
