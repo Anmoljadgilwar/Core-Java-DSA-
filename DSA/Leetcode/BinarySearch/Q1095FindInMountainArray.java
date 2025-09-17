@@ -1,5 +1,7 @@
 
 //Q1095. Find in Mountain Array
+//https://leetcode.com/problems/find-in-mountain-array/
+//Medium
 public class Q1095FindInMountainArray {
 
     public static void main(String[] args) {

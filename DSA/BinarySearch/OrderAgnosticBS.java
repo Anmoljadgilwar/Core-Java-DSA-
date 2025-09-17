@@ -22,7 +22,7 @@ public class OrderAgnosticBS {
             //find the middle element
             int mid = start + (end - start) / 2;
 
-            if (arr[mid] == target) {
+            if (arr[mid] == target) {  //base case
                 return mid;
             }
 

@@ -14,8 +14,9 @@ public class StringSearch {
 
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == target) {
-                return true;
 
+                System.out.println(i);
+                return true;
             }
         }
         return false;

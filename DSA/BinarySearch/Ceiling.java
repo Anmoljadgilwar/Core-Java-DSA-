@@ -88,7 +88,7 @@ public class Ceiling {
     //return the index of smalled element >= target
     static int ceiling(int[] arr, int target) {
 //
-        if (target > arr[arr.length - 1]) { //if target is greater than the largest element in the array, return -1
+        if (target > arr[arr.length - 1]) { // base case
             return -1;
         }
 

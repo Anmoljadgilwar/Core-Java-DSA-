@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
 // Q33. Search in Rotated Sorted Array
 // Medium
+//desciption: There is an integer array nums sorted in ascending order (with distinct values).
 
 public class Q33RotatedSortedArray {
 
@@ -8,7 +9,7 @@ public class Q33RotatedSortedArray {
         int nums[] = {4, 5, 6, 7, 0, 1, 2};
         int target = 0;
         int ans = search(nums, target);
-        System.out.println(ans);
+        System.out.println("Index of target is " + ans);
     }
 
     public static int search(int[] nums, int target) {
