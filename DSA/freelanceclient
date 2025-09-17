@@ -1,1 +1,0 @@
-I got a client he want an web app, to communicate with his customers. So he want Features like authentication, admin can only see all users and chat with them but user can only see and chat with admin, after message read Blue tik like, mobile friendly ui. tech-stack : ReactJS, tailwindCSS, ExpressJS

@@ -1,13 +1,19 @@
 // Q. 231 Power of Two
 // https://leetcode.com/problems/power-of-two/description/
-
+// Medium
+// Given an integer n, return true if it is a power of two. Otherwise, return false.
 //This program uses recursion to repeatedly divide the number by 2 until it either reaches 1 (a power of two) or fails (not a power of two).
+
 public class Q231PowerOfTwo {
 
     public boolean isPowerOfTwo(int n) {
+        if (n <= 0) {
+            return false;
+        }
         if (n == 1) {
             return true;
         }
+
         if (n % 2 == 0) {
             return isPowerOfTwo(n / 2);
         }

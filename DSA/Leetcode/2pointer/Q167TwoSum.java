@@ -31,6 +31,7 @@ public class Q167TwoSum {
 
 }
 
+//time complexity: 
 //output: [1, 2]
 //Execution step by step:
 // 1. Initialize left pointer at index 0 and right pointer at the last index of the array.   
