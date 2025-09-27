@@ -10,9 +10,9 @@ public class firstR {
             return;
         }
 
-        System.out.println(n);
+        // System.out.println(n);  // output: 6 5 4 3 2 1
         RLoop(n - 1);
-        //System.out.println(n);
+        System.out.println(n); // output: 1 2 3 4 5 6
     }
 }
 

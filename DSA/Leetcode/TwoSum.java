@@ -15,3 +15,5 @@ public class TwoSum {
         return new int[]{};
     }
 }
+
+//use hashmap for optimization
