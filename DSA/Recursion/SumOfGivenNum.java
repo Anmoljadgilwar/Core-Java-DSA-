@@ -4,7 +4,7 @@ public class SumOfGivenNum {
     public static void main(String[] args) {
 
         System.out.println(sum(12345));
-        System.out.println(product(555));
+        System.out.println(product(555)); //5*5 *5
     }
 
     static int sum(int n) {
@@ -23,3 +23,5 @@ public class SumOfGivenNum {
         return (p % 10) * product(p / 10);
     }
 }
+
+//sieve_of_eratosthenes
