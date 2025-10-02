@@ -1,3 +1,4 @@
+//description: Given an array of integers nums, return true if the array is sorted in non-decreasing order, and false otherwise.
 
 public class Sorted {
 
@@ -9,8 +10,11 @@ public class Sorted {
 
     public static boolean sorted(int[] arr, int index) {
         if (index == arr.length - 1) {
-            return true;
+            return true; //base case
         }
         return arr[index] < arr[index + 1] && sorted(arr, index + 1);
     }
 }
+
+//time complexity: O(n)
+//space complexity: O(n)
