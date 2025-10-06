@@ -1,30 +1,43 @@
+// Linear Search using Recursion
 
 public class Find {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 3};
         int target = 3;
-        System.out.println(find(arr, target, 0));
-        System.out.println(findIndex(arr, target, 0));
+
+        System.out.println(find(arr, target, 0));          // true
+        System.out.println(findIndex(arr, target, 0));     // 2
+        System.out.println(findLastIndex(arr, target, arr.length - 1)); // 4
     }
 
+    // 1️⃣ Just check if element exists
     static boolean find(int[] arr, int target, int index) {
-        if (index == arr.length - 1) {
-            return false; //base case
+        if (index == arr.length) {   // reached end of array
+            return false;
         }
         return arr[index] == target || find(arr, target, index + 1);
     }
 
+    // 2️⃣ Find first index of target
     static int findIndex(int[] arr, int target, int index) {
-        if (index == arr.length - 1) {
-            return -1; //base case
+        if (index == arr.length) {   // base case
+            return -1;
         }
         if (arr[index] == target) {
-            return index;
+            return index;            // found it
         }
         return findIndex(arr, target, index + 1);
     }
-    //TODO find last index
-}
 
-//commit message for this program : "Find element in array"
+    // 3️⃣ Find last index of target
+    static int findLastIndex(int[] arr, int target, int index) {
+        if (index < 0) {             // base case: start < 0
+            return -1;
+        }
+        if (arr[index] == target) {
+            return index;            // found from the end
+        }
+        return findLastIndex(arr, target, index - 1);
+    }
+}
