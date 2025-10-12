@@ -41,3 +41,6 @@ public class Find {
         return findLastIndex(arr, target, index - 1);
     }
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
