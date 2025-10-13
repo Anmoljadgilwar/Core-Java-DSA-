@@ -4,7 +4,7 @@ public class Sorted {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 4, 3, 4, 5};
+        int[] arr = {1, 2, 4, 4, 5,};
         System.out.println(sorted(arr, 0));
     }
 
@@ -12,7 +12,7 @@ public class Sorted {
         if (index == arr.length - 1) {
             return true; //base case
         }
-        return arr[index] < arr[index + 1] && sorted(arr, index + 1);
+        return arr[index] < arr[index + 1] && sorted(arr, index + 1); // <=
     }
 }
 
