@@ -1,5 +1,7 @@
-// Linear Search using Recursion
 
+import java.util.ArrayList;
+
+// Linear Search using Recursion
 public class Find {
 
     public static void main(String[] args) {
@@ -9,6 +11,8 @@ public class Find {
         System.out.println(find(arr, target, 0));          // true
         System.out.println(findIndex(arr, target, 0));     // 2
         System.out.println(findLastIndex(arr, target, arr.length - 1)); // 4
+
+        System.out.println(findAllIndex(arr, 4, 0, new ArrayList<>()));
     }
 
     // 1️⃣ Just check if element exists
@@ -40,7 +44,18 @@ public class Find {
         }
         return findLastIndex(arr, target, index - 1);
     }
-}
 
+//Return ArrayList
+    static ArrayList<Integer> findAllIndex(int[] arr, int target, int index, ArrayList<Integer> list) {
+        if (index == arr.length) {   // base case
+            return list;
+        }
+        if (arr[index] == target) {
+            list.add(index);            // found it
+        }
+        return findAllIndex(arr, target, index + 1, list);
+    }
+
+}
 // Time Complexity: O(n)
 // Space Complexity: O(n)
