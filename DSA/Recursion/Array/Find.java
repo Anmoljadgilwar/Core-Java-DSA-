@@ -56,6 +56,20 @@ public class Find {
         return findAllIndex(arr, target, index + 1, list);
     }
 
+    //Dont use it
+    static ArrayList<Integer> findAllIndex2(int[] arr, int target, int index) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+        if (index == arr.length) {   // base case
+            return list;
+        }
+        if (arr[index] == target) {
+            list.add(index);            // found it
+        }
+        ArrayList<Integer> ansFromBelowCalls = findAllIndex2(arr, target, index + 1);
+        list.addAll(ansFromBelowCalls);
+        return list;
+    }
 }
 // Time Complexity: O(n)
 // Space Complexity: O(n)
