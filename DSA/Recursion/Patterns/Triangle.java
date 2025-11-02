@@ -1,9 +1,17 @@
 
+import java.util.Arrays;
+
 class Triangle {
 
     public static void main(String[] args) {
         triangle(4, 0);
         triangle2(4, 0);
+        System.out.println();
+        //
+        int[] arr = {4, 1, 3, 2, 5, 6};
+        bubble(arr, arr.length - 1, 0);
+        System.out.println(Arrays.toString(arr));
+
     }
 
     static void triangle(int r, int c) {
@@ -33,6 +41,28 @@ class Triangle {
             System.out.println();
 
         }
+
+    }
+
+    //last element sorted first
+    //so it is in bootom of call stack
+    static void bubble(int[] arr, int r, int c) {
+        if (r == 0) {
+            return;
+        }
+
+        if (c < r) {
+            if (arr[c] > arr[c + 1]) {
+                int temp = arr[c];
+                arr[c] = arr[c + 1];
+                arr[c + 1] = temp;
+            }
+            bubble(arr, r, c + 1);
+
+        } else {
+            bubble(arr, r - 1, 0);
+        }
+        //Time complexity: O(n^2)
 
     }
 }
