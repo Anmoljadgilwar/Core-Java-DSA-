@@ -12,6 +12,9 @@ class Triangle {
         bubble(arr, arr.length - 1, 0);
         System.out.println(Arrays.toString(arr));
 
+        //Selection Sort
+        selectionSortRec(arr, arr.length - 1, 0, 0);
+        System.out.println(Arrays.toString(arr));
     }
 
     static void triangle(int r, int c) {
@@ -46,6 +49,7 @@ class Triangle {
 
     //last element sorted first
     //so it is in bootom of call stack
+    // r = end, c = start
     static void bubble(int[] arr, int r, int c) {
         if (r == 0) {
             return;
@@ -65,6 +69,29 @@ class Triangle {
         //Time complexity: O(n^2)
 
     }
+
+    //Selection Sort
+    static void selectionSortRec(int[] arr, int r, int c, int maxIndex) {
+        if (r == 0) {
+            return;
+        }
+
+        if (c < r) {
+            if (arr[c] > arr[maxIndex]) {
+                selectionSortRec(arr, r, c + 1, c);
+            } else {
+                selectionSortRec(arr, r, c + 1, maxIndex);
+            }
+        } else {
+            // swap the largest element with the last element
+            int temp = arr[maxIndex];
+            arr[maxIndex] = arr[r - 1];
+            arr[r - 1] = temp;
+
+            selectionSortRec(arr, r - 1, 0, 0);
+        }
+    }
+
 }
 
 // ****
