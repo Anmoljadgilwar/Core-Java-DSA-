@@ -71,24 +71,24 @@ class Triangle {
     }
 
     //Selection Sort
-    static void selectionSortRec(int[] arr, int r, int c, int maxIndex) {
-        if (r == 0) {
+    static void selectionSortRec(int[] arr, int end, int start, int maxIndex) {
+        if (end == 0) {
             return;
         }
 
-        if (c < r) {
-            if (arr[c] > arr[maxIndex]) {
-                selectionSortRec(arr, r, c + 1, c);
+        if (start < end) {
+            if (arr[start] > arr[maxIndex]) {
+                selectionSortRec(arr, end, start + 1, start);
             } else {
-                selectionSortRec(arr, r, c + 1, maxIndex);
+                selectionSortRec(arr, end, start + 1, maxIndex);
             }
         } else {
             // swap the largest element with the last element
             int temp = arr[maxIndex];
-            arr[maxIndex] = arr[r - 1];
-            arr[r - 1] = temp;
+            arr[maxIndex] = arr[end - 1];
+            arr[end - 1] = temp;
 
-            selectionSortRec(arr, r - 1, 0, 0);
+            selectionSortRec(arr, end - 1, 0, 0);
         }
     }
 
@@ -98,4 +98,42 @@ class Triangle {
 // ***
 // **
 // *
-
+//
+// public class RecursiveSelectionSort {
+//     // Recursive function to perform selection sort
+//     static void selectionSort(int[] arr, int start) {
+//         int n = arr.length;
+//         // Base case: if we reach the end, return
+//         if (start >= n - 1)
+//             return;
+//         // Find index of the minimum element in the rest of array
+//         int minIndex = start;
+//         for (int i = start + 1; i < n; i++) {
+//             if (arr[i] < arr[minIndex]) {
+//                 minIndex = i;
+//             }
+//         }
+//         // Swap the found minimum element with the first element
+//         int temp = arr[minIndex];
+//         arr[minIndex] = arr[start];
+//         arr[start] = temp;
+//         // Recursive call for the rest of the array
+//         selectionSort(arr, start + 1);
+//     }
+//     // Helper function to print array
+//     static void printArray(int[] arr) {
+//         for (int num : arr) {
+//             System.out.print(num + " ");
+//         }
+//         System.out.println();
+//     }
+//     // Main function
+//     public static void main(String[] args) {
+//         int[] arr = {5, 3, 8, 4, 2};
+//         System.out.println("Before Sorting:");
+//         printArray(arr);
+//         selectionSort(arr, 0);  // Start from index 0
+//         System.out.println("After Sorting:");
+//         printArray(arr);
+//     }
+// }
