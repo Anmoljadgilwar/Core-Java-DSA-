@@ -8,7 +8,7 @@ class Triangle {
         triangle2(4, 0);
         System.out.println();
         //
-        int[] arr = {4, 1, 3, 2, 5, 6};
+        int[] arr = {4, 1, 3, 7, 2, 5, 6};
         bubble(arr, arr.length - 1, 0);
         System.out.println(Arrays.toString(arr));
 
