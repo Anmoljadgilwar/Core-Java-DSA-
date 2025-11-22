@@ -49,3 +49,8 @@ public class M1 {
         return mix;
     }
 }
+
+//time complexity: O(nlogn)
+//space complexity: O(n)
+
+// The copyOfRange() method in Java is a static utility method in the java.util.Arrays class. It's used to efficiently copy a specified range of elements from one array into a new array.
