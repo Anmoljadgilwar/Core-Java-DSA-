@@ -1,7 +1,6 @@
 
 import java.util.Arrays;
 // class TwodArray {
-
 //     // you cannot assign null to any primitive data type
 //     //int num = null; 
 //     // String num = null;
@@ -17,11 +16,11 @@ import java.util.Arrays;
 //     }
 // }
 //
-//
+
 class TwodArray {
 
     public static void main(String[] args) {
-        int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9, 1, 2}, {10, 20, 40}};
+        int arr[][] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9, 1, 2}, {1, 6, 40}};
         //i=0 cause index starts from 0
         // for (int[] a : arr) {
         //     System.out.println(Arrays.toString(a));

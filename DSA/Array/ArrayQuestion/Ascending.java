@@ -23,7 +23,7 @@ public class Ascending {
         if (isAscending) {
             System.out.println("Array is sorted in ascending order");
         } else {
-            System.out.println("Array is sorted in not ascending order");
+            System.out.println("Array is not sorted in ascending order");
 
         }
     }

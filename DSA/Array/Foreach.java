@@ -1,6 +1,5 @@
 
 public class Foreach {
-
     public static void main(String[] args) {
         int arr[] = new int[8];
         arr[0] = 10;

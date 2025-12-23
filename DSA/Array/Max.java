@@ -32,3 +32,5 @@ public class Max {
         System.out.println("Maximum value: " + maxx);
     }
 }
+//time complexity: O(n)
+//space complexity: O(1)
