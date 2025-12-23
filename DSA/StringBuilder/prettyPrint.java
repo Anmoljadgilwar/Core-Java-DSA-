@@ -7,7 +7,8 @@ public class prettyPrint {
 
         System.out.printf("Formatted number is %.2f", ans);
         System.out.println();
+        System.out.printf("Formatted number is %.4f", ans);
+        System.out.println();
         System.out.println("Pi value is %.4f " + Math.PI);
-
     }
 }
