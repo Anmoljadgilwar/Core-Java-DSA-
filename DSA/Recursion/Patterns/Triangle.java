@@ -26,11 +26,11 @@ class Triangle {
             return;
         }
         if (c < r) {
-            System.out.print("*");
+            System.out.print("*");  //it prints row 
             triangle(r, c + 1);
         } else {
-            System.out.println();
-            triangle(r - 1, 0);
+            System.out.println();     //nextline
+            triangle(r - 1, 0);     //row -1 column 0
         }
 
     }
@@ -41,7 +41,7 @@ class Triangle {
         }
         if (c < r) {
             triangle2(r, c + 1);
-            System.out.print("*");
+            System.out.print("*");     //printing after recursive call
 
         } else {
             triangle2(r - 1, 0);

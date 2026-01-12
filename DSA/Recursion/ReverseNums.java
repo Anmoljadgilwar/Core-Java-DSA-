@@ -8,8 +8,8 @@ public class ReverseNums {
             return;
         }
         int rem = n % 10;             // extract last digit
-        sum = (sum * 10) + rem;         // build reversed number
-        reverse(n / 10);              // recursive call with remaining digits
+        sum = (sum * 10) + rem;        // build reversed number
+        reverse(n / 10);     // recursive call with remaining digits(removes last digit)
     }
 
     public static void main(String[] args) {

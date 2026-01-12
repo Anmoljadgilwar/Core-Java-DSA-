@@ -2,7 +2,7 @@
 
 ### Purpose of `Collections`
 
-The `Collections` class provides utility methods for working with collections (e.g., lists, sets, and maps). It includes methods for sorting, searching, shuffling, reversing, and synchronizing collections.
+The `Collections` class provides **utility methods** for working with collections (e.g., lists, sets, and maps). It includes methods for sorting, searching, shuffling, reversing, and synchronizing collections.
 
 ### Common Methods in `Collections`
 

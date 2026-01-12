@@ -35,3 +35,6 @@ public class B1 {
         return -1;
     }
 }
+
+// space complexity: O(1)
+// time complexity: O(log n)

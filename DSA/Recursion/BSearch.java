@@ -29,4 +29,4 @@ public class BSearch {
 }
 
 // Time complexity: O(log n)
-// Space complexity: O(log n) 
+// Space complexity: O(log n) [if "while loop" used Space Complexity: O(1)]

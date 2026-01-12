@@ -43,5 +43,7 @@ public class fact1 {
         System.out.print(n);
         print(n--);       //output:StackOverflow
         //  print(--n);    //output:4 3 2 1
+        //  print(n-1);    //output:4 3 2 1
+
     }
 }

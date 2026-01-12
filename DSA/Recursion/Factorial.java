@@ -4,8 +4,8 @@ public class Factorial {
     public static void main(String[] args) {
 
         int n = 4;
-        int ans = fact(n);
-        System.out.println(ans);
+        // int ans = fact(n);
+        System.out.println(fact(n));
     }
 
     static int fact(int n) {
