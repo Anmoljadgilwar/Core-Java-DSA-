@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/find-all-duplicates-in-an-array/
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,3 +41,5 @@ public class FindAllDuplicates {
         System.out.println(Arrays.toString(arr));
     }
 }
+
+// TC: O(N), SC:O(1)

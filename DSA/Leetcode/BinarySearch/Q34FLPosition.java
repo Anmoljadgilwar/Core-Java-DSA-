@@ -52,3 +52,6 @@ class Q34FLPosition {
         return index;
     }
 }
+
+// time complexity: O(log n)
+// space complexity: O(1)

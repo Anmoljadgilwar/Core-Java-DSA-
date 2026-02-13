@@ -4,6 +4,7 @@ public class InfiniteArray {
 
     public static void main(String[] args) {
         //int arr[] = {3, 5, 7, 9, 10, 90, 100};
+
         long[] arr = new long[4];
         arr[0] = 1;
         arr[1] = 2;
@@ -22,7 +23,7 @@ public class InfiniteArray {
         int start = 0;
         int end = 1;
 
-        //condition for the target to be in range
+        //if target is greater than the current end element
         while (target > arr[end]) {
             int newStart = end + 1; //this is newStart
             //double the box value

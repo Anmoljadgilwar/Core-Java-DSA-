@@ -22,7 +22,6 @@
 //         return true;
 //     }
 // }
-//
 //sieve_of_eratosthenes
 /*
  Start with all numbers as candidates.
@@ -47,7 +46,6 @@ public class Prime {
                 }
             }
         }
-
         for (int i = 2; i <= n; i++) {
             if (!primes[i]) {
                 System.out.print(i + " ");

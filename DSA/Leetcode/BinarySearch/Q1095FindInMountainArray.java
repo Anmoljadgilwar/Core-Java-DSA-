@@ -15,11 +15,12 @@ public class Q1095FindInMountainArray {
         //first half search
         int firstTry = orderAgnosticBS(arr, target, 0, peak);
 
-        if (firstTry != -1) {
+        if (firstTry == arr[target]) {
             return firstTry;
+        } else {
+            //second half search
+            return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
         }
-        //second half search
-        return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
     }
 
     public static int peakIndexInMountainArray(int[] arr) {
@@ -75,3 +76,15 @@ public class Q1095FindInMountainArray {
 
     }
 }
+
+//Time Complexity: O(log n)
+//Space Complexity: O(1)
+//
+//
+//it will also work at line no 18 to 22
+//    if (firstTry != -1) {
+//             return firstTry;
+//         }
+//         //second half search
+//         return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
+//     }

@@ -28,7 +28,6 @@ public class Q167TwoSum {
         }
         return new int[]{-1, -1}; // Should not be reached (guaranteed one solution)
     }
-
 }
 
 //time complexity: 

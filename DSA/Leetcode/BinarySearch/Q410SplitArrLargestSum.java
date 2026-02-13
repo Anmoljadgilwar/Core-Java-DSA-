@@ -7,7 +7,7 @@
 public class Q410SplitArrLargestSum {
 
     public static void main(String[] args) {
-        int nums[] = {7, 2, 5, 10, 8};
+        int nums[] = {11, 2, 5, 10, 8};
         int k = 2;
         System.out.println(splitArray(nums, k));
     }
