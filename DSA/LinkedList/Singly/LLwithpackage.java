@@ -10,6 +10,7 @@ public class LLwithpackage {
         list.addFirst("I");
         list.addLast("in");
         list.add("Love");
+        list.add(4, "with DSA");
 
         System.out.println(list);
         System.out.println(list.get(0));
