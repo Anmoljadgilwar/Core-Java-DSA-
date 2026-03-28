@@ -60,51 +60,34 @@ class LinkedList {
         }
     }
 
-    // Traverse (Display)
-    void traverse() {
-        if (head == null) {
-            System.out.println("List is empty.");
-            return;
-        }
-
-        Node temp = head;
-        System.out.print("Linked List: ");
-        while (temp != null) {
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
-    }
-}
-
 // Main class
-public class Main {
+    public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        LinkedList list = new LinkedList();
+            LinkedList list = new LinkedList();
 
-        // Insertion
-        list.insert(10);
-        list.insert(20);
-        list.insert(30);
+            // Insertion
+            list.insert(10);
+            list.insert(20);
+            list.insert(30);
 
-        // Traversal
-        list.traverse();
+            // Traversal
+            list.traverse();
 
-        // Deletion
-        list.delete(20);
+            // Deletion
+            list.delete(20);
 
-        // Traversal after deletion
-        list.traverse();
+            // Traversal after deletion
+            list.traverse();
+        }
     }
-}
 
-/*
+    /*
 10 inserted.
 20 inserted.
 30 inserted.
 Linked List: 10 -> 20 -> 30 -> null
 20 deleted.
 Linked List: 10 -> 30 -> null
-*/
+     */
