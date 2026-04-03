@@ -1,3 +1,5 @@
+// 142. Linked List Cycle II
+//Description: Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
 
 public class Solution {
 
@@ -38,23 +40,20 @@ public class Main142 {
 }
 
 /**
- 🧪 Why Does This Work?
-Let’s say:
+ * 🧪 Why Does This Work? Let’s say:
 
-Distance from head to start of cycle = a
-Distance from start of cycle to meeting point = b
-Distance from meeting point back to start of cycle = c
-When they meet:
+ *  *Distance from head to start of cycle = a Distance from start of cycle to
+ * meeting point = b Distance from meeting point back to start of cycle = c When
+ * they meet:
 
-slow traveled: a + b
-fast traveled: a + b + c + b = a + 2b + c
-Since fast moves 2x faster:
+ *  *slow traveled: a + b fast traveled: a + b + c + b = a + 2b + c Since fast
+ * moves 2x faster:
 
-2(a + b) = a + 2b + c
-→ 2a + 2b = a + 2b + c
-→ a = c
+ *  *2(a + b) = a + 2b + c → 2a + 2b = a + 2b + c → a = c
 
-✅ So, the distance from head to cycle start = distance from meeting point to cycle start!
+ *  *✅ So, the distance from head to cycle start = distance from meeting point to
+ * cycle start!
 
-That’s why resetting slow to head and moving both one step at a time makes them meet at the cycle start.
-*/
+ *  *That’s why resetting slow to head and moving both one step at a time makes
+ * them meet at the cycle start.
+ */

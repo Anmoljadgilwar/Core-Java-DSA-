@@ -1,5 +1,5 @@
-//141. 
-// 1. Define the ListNode class (LeetCode hides this part)
+//141. Linked List Cycle
+// Given the head of a linked list, return true if there is a cycle in the linked list. Otherwise, return false.
 
 class ListNode {
 
