@@ -1,5 +1,8 @@
 
-public class HappyNumber {
-
+class HappyNumber {
+    function happyNum() {
+      
+    }
+    
 }
 
