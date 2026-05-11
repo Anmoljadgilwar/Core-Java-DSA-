@@ -1,3 +1,5 @@
+Business:- Marketing, Sales, onboarding, Delivery, Reactivation & Retention
+
 Short answer: **yes, a complete beginner _can_ sell AI automation agents built with n8n — but it’s not “easy” in a push-button way.** It _is_ very doable if you approach it the right way.
 
 Let me break it down honestly 👇

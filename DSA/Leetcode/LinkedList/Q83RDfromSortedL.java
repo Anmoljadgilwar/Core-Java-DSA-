@@ -1,4 +1,6 @@
-// 83. Remove Duplicates from Sorted List
+// 83. Remove Duplicates from *Sorted* List
+//level:medeum
+//https://leetcode.com/problems/remove-duplicates-from-sorted-list/description
 
 class Solution {
 

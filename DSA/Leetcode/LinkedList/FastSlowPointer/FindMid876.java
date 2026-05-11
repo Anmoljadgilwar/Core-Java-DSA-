@@ -1,20 +1,14 @@
+// https://leetcode.com/problems/middle-of-the-linked-list/
 
 class ListNode {
 
     int val;
     ListNode next;
 
-    ListNode() {
-    }
-
     ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
 }
 
 class FindMid876 {
@@ -33,5 +27,13 @@ class FindMid876 {
     //
     public static void main(String[] args) {
 
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        FindMid876 obj = new FindMid876();
+        ListNode mid = obj.middleNode(head);
+        System.out.println(mid.val);
     }
 }

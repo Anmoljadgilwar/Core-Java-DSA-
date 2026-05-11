@@ -15,8 +15,20 @@ public class LL {
 
     // Recursive insert
     // Wrapper method (important)
+    // Wrapper updates head
     public void insertRecursive(int data, int pos) {
-        head = insertAtPosition(head, data, pos);
+        head = insertRecursive(head, data, pos, 0);
+    }
+
+// Actual recursive helper (returns new head)
+    private Node insertRecursive(Node head, int data, int pos, int currPos) {
+        if (head == null || currPos == pos) {
+            Node newNode = new Node(data);
+            newNode.next = head;
+            return newNode;
+        }
+        head.next = insertRecursive(head.next, data, pos, currPos + 1);
+        return head;
     }
 
     void print() {
