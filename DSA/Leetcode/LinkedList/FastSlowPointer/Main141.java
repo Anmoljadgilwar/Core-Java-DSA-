@@ -22,6 +22,7 @@ public class Main141 {
             return false;
         }
 
+        // 1. Find the cycle
         ListNode slow = head;   // moves 1 step
         ListNode fast = head;   // moves 2 steps
 
