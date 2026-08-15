@@ -40,6 +40,19 @@ while (left < right) {
 
 ### 2) Sliding Window 🪟
 
+> Find the maximum sum of 3 consecutive elements.
+
+```text
+[2, 1, 5] 1  3  2
+ └ window ┘
+
+ 2 [1, 5, 1] 3  2
+    └ window ┘
+
+ 2  1 [5, 1, 3] 2
+       └ window ┘
+```
+
 **Idea:** Maintain a window (contiguous subarray / substring) and expand/contract it to satisfy a condition.
 
 **When to use**

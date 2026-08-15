@@ -1,0 +1,187 @@
+The easiest way to understand it is:
+
+> **Two Pointers is a broader technique. Sliding Window is a specific type of Two Pointers technique.**
+
+### 1. Two Pointers
+
+Two Pointers means using **two indexes/pointers** to solve a problem efficiently.
+
+They don't necessarily represent a window.
+
+Example: **Two Sum in a sorted array**
+
+```text
+arr = [1, 2, 3, 4, 6]
+       ↑        ↑
+      left     right
+```
+
+- If `arr[left] + arr[right]` is too small → move `left`
+- If too large → move `right`
+- If equal → answer found
+
+```java
+int left = 0;
+int right = arr.length - 1;
+
+while (left < right) {
+    int sum = arr[left] + arr[right];
+
+    if (sum == target) {
+        return true;
+    } else if (sum < target) {
+        left++;
+    } else {
+        right--;
+    }
+}
+```
+
+Here, there is **no window**.
+
+So this is **Two Pointers**, but not Sliding Window.
+
+---
+
+# 2. Sliding Window
+
+Sliding Window also commonly uses two pointers:
+
+```text
+left
+ ↓
+[ 2  1  5  1  3  2 ]
+             ↑
+            right
+```
+
+But the two pointers define an actual **contiguous window**.
+
+For example:
+
+> Find the maximum sum of 3 consecutive elements.
+
+```text
+[2, 1, 5] 1  3  2
+ └ window ┘
+
+ 2 [1, 5, 1] 3  2
+    └ window ┘
+
+ 2  1 [5, 1, 3] 2
+       └ window ┘
+```
+
+The window **slides** through the array.
+
+---
+
+# 3. Main Difference
+
+| Two Pointers                    | Sliding Window                             |
+| ------------------------------- | ------------------------------------------ |
+| General technique               | Specific pattern                           |
+| Uses two indexes                | Usually uses two indexes                   |
+| Doesn't require a window        | Always maintains a window/range            |
+| Pointers can move independently | Usually represents `[left...right]`        |
+| Can work from both ends         | Usually expands/shrinks a contiguous range |
+| Example: Two Sum                | Example: Maximum Sum of K                  |
+| Example: Palindrome             | Example: Longest Substring                 |
+
+---
+
+# 4. Very important relationship
+
+Think of it like this:
+
+```text
+             TWO POINTERS
+                  │
+        ┌─────────┴─────────┐
+        │                   │
+   Opposite ends       Same direction
+        │                   │
+    Two Sum             Sliding Window
+   Palindrome          Subarray/Substring
+```
+
+So:
+
+**Every Sliding Window problem can usually be solved using two pointers, but not every Two Pointer problem is Sliding Window.**
+
+---
+
+# 5. Example to clearly distinguish them
+
+### Problem A
+
+> Find whether two numbers add up to target.
+
+```text
+[1, 2, 3, 4, 6]
+ ↑           ↑
+ L           R
+```
+
+You're checking a **pair**.
+
+➡️ **Two Pointers**
+
+---
+
+### Problem B
+
+> Find the longest substring without repeating characters.
+
+```text
+a b c a b
+↑     ↑
+L     R
+```
+
+Everything between `L` and `R` is the current substring/window.
+
+If duplicate occurs, move `L`.
+
+➡️ **Sliding Window**
+
+---
+
+# 6. Interview shortcut 🧠
+
+When you see:
+
+### "Two elements"
+
+Think:
+
+> **Two Pointers**
+
+Examples:
+
+- Two Sum
+- Pair with target sum
+- Container With Most Water
+- 3Sum
+
+### "Subarray / substring / consecutive"
+
+Think:
+
+> **Sliding Window**
+
+Examples:
+
+- Maximum sum of K consecutive elements
+- Longest substring without repeating characters
+- Minimum size subarray sum
+- Longest substring with at most K distinct characters
+
+---
+
+### One-line memory trick
+
+> **Two Pointers = two indexes.**
+> **Sliding Window = two indexes + a contiguous range that you're maintaining.**
+
+This distinction is **very important for DSA interviews**.

@@ -1,14 +1,14 @@
-// 83. Remove Duplicates from *Sorted* List
-//level:medeum
-//https://leetcode.com/problems/remove-duplicates-from-sorted-list/description
 
+import java.util.List;
+
+// 83. Remove Duplicates from *Sorted* List
+// level:medeum
+// https://leetcode.com/problems/remove-duplicates-from-sorted-list/description
 class Solution {
 
     public ListNode deleteDuplicates(ListNode head) {
-
         // 2. Start our traveler at the beginning 🚶‍♂️
         ListNode current = head;
-
         // 3. Keep going until we hit the end of the trail 🌲
         while (current != null && current.next != null) {
             // 4. Check if the neighbor is a twin 👥
@@ -20,12 +20,10 @@ class Solution {
                 current = current.next;
             }
         }
-
         // 7. Return the cleaned-up list 🏆
         return head;
     }
 }
-
 // complexity:
 // time: O(n)
 // space: O(1)
